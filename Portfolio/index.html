@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veera's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    * {margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif;}
+    body {background: #0a0a0a; color: #fff; overflow-x: hidden; scroll-behavior: smooth;}
+    nav {display: flex; justify-content: space-between; padding: 20px 50px; background: #0a0a0a; position: sticky; top: 0; z-index: 1000;}
+    nav a {color: #00f0ff; text-decoration: none; margin-left: 30px; font-weight: 500; transition: 0.3s;}
+    nav a:hover {color: #00ff88; text-shadow: 0 0 10px #00ff88;}
+
+    .hero {display: flex; flex-wrap: wrap; align-items: center; justify-content: space-around; min-height: 90vh; padding: 50px;}
+    .hero-text {max-width: 600px;}
+    .hero-text h1 {font-size: 48px; margin-bottom: 20px;}
+    .hero-text h2 {font-size: 28px; margin-bottom: 20px; color: #00f0ff;}
+    .hero-text p {font-size: 18px; line-height: 1.5; margin-bottom: 20px;}
+    .btn {padding: 10px 20px; background: #00f0ff; color: #000; border: none; border-radius: 30px; cursor: pointer; font-size: 16px; box-shadow: 0 0 15px #00f0ff; transition: 0.3s;}
+    .btn:hover {background: #00ff88; box-shadow: 0 0 20px #00ff88;}
+
+    .profile-pic img {width: 300px; border-radius: 50%; box-shadow: 0 0 30px #00f0ff; animation: float 4s ease-in-out infinite;}
+
+    @keyframes float {0%{transform: translatey(0px);} 50%{transform: translatey(-20px);} 100%{transform: translatey(0px);}}
+
+    section {padding: 60px 50px;}
+    .section-title {font-size: 36px; color: #00f0ff; margin-bottom: 30px; text-align: center;}
+    .card-container {display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;}
+    .card {flex: 1 1 300px; background: #111; padding: 20px; border-radius: 20px; box-shadow: 0 0 15px #00f0ff; transition: 0.3s;}
+    .card:hover {transform: translateY(-10px); box-shadow: 0 0 25px #00ff88;}
+    .card img {width: 100%; border-radius: 10px; margin-bottom: 15px;}
+    .card a {color: #00f0ff; text-decoration: underline;}
+
+    footer {text-align: center; padding: 30px; color: #555; font-size: 14px;}
+
+    @media (max-width: 768px) {
+      .hero {flex-direction: column; text-align: center;}
+      .profile-pic img {width: 200px;}
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">Portfolio</div>
+  <div>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#blogs">Blog</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-text" data-aos="fade-right">
+    <h1>Hello, It's Me<br> <strong>Veera Brahmam Penudhota</strong></h1>
+    <h2>I'm a <span id="typing"></span></h2>
+    <p>Passionate Java Full Stack Developer with hands-on experience in building scalable and dynamic applications!</p>
+    <a href="VB_FS_ATS.pdf" download class="btn">Download CV</a>
+  </div>
+  <div class="profile-pic" data-aos="fade-left">
+    <img src="images/imag1.jpg" alt="Veera Brahmam">
+  </div>
+</section>
+
+<section id="about">
+  <h2 class="section-title">About Me</h2>
+  <p data-aos="fade-up">
+    I'm a passionate Java Full Stack Developer from Hyderabad, India, who loves turning ideas into reality through code.
+    I specialize in building scalable web applications using Java, Spring Boot, React.js, MySQL, and AWS services.
+    With a strong foundation in Data Structures, Computer Networks, and SDLC practices, I strive to create secure,
+    fast, and user-friendly solutions. I believe in continuous learning, clean coding, and solving real-world problems
+    with technology. <br><br>
+    Besides coding, I enjoy gaming, exploring new technologies, and connecting with like-minded innovators.
+    I approach every project with energy, attention to detail, and a desire to make it not just functional, but remarkable! 🚀✨
+  </p>
+</section>
+
+<section id="skills">
+  <h2 class="section-title">Skills</h2>
+  <div class="card-container">
+    <div class="card" data-aos="fade-up">Java, Spring Boot, REST APIs</div>
+    <div class="card" data-aos="fade-up">React.js, HTML5, CSS3, JavaScript</div>
+    <div class="card" data-aos="fade-up">AWS, EC2, S3, DynamoDB</div>
+    <div class="card" data-aos="fade-up">MySQL, Oracle, Git, GitHub</div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2 class="section-title">Projects</h2>
+  <h3 style="color:#00ff88;text-align:center;">Web Development Projects</h3>
+  <div class="card-container">
+    <div class="card" data-aos="zoom-in">
+      <img src="images/Snake-Game.png" alt="Snake Game">
+      <h4>Snake Jungle Game</h4>
+      <p>Fun jungle-themed Snake game with levels and sound effects.</p>
+      <a href="https://chimerical-cupcake-0e2351.netlify.app/" target="_blank">Play Game</a>
+    </div>
+    <div class="card" data-aos="zoom-in">
+      <img src="images/TODO-List.png" alt="Todo List">
+      <h4>Todo List</h4>
+      <p>Manage your daily tasks with this simple React.js todo app.</p>
+      <a href="http://veerus-todo.netlify.app" target="_blank">View App</a>
+    </div>
+    <div class="card" data-aos="zoom-in">
+      <img src="images/Rock-Paper.png" alt="Rock Paper Scissors">
+      <h4>Rock Paper Scissors</h4>
+      <p>Classic game against the computer with smooth UI.</p>
+      <a href="https://delightful-kitten-e3902c.netlify.app/" target="_blank">Play Game</a>
+    </div>
+    <div class="card" data-aos="zoom-in">
+      <img src="images/XOXO.png" alt="XOXO Game">
+      <h4>XOXO Game (Tic Tac Toe)</h4>
+      <p>Interactive Tic Tac Toe web version with a stylish interface.</p>
+      <a href="https://elegant-starburst-39a4c1.netlify.app/" target="_blank">Play Game</a>
+    </div>
+  </div>
+
+  <h3 style="color:#00ff88;margin-top:50px;text-align:center;">Full Stack Projects</h3>
+  <div class="card-container">
+    <div class="card" data-aos="fade-up">
+      <img src="images/Bakery.png" alt="Bakery">
+      <h4>Online Bakery Ordering System</h4>
+      <p>
+        A full-stack responsive web application that allows users to order bakery products like cakes, pastries, and breads online.
+        Customers can select pickup or delivery, view dynamic menus, and track orders. Built with Java, Spring Boot backend, 
+        MySQL database, and a frontend using HTML, CSS, and JavaScript. Implements secure APIs, admin product management, and basic authentication.
+      </p>
+      <a href="https://github.com/veerupenudhota/Veerus-Online-Bakery" target="_blank">View GitHub</a>
+    </div>
+
+    <div class="card" data-aos="fade-up">
+      <img src="images/Hotel-Room.png" alt="Hotel Room">
+      <h4>Hotel Room Booking Platform</h4>
+      <p>
+        A scalable hotel room booking platform with real-time availability tracking, user authentication, and booking history management.
+        Built with Java Spring Boot for backend services, React.js for a dynamic frontend, and MySQL for database operations.
+        Deployed on AWS EC2 for cloud hosting. Features include secure login (JWT Authentication), CRUD operations for booking management, 
+        and user-friendly UI for customers to browse and book rooms.
+      </p>
+      <a href="https://github.com/veerupenudhota/Online-BookingManagement" target="_blank">View GitHub</a>
+    </div>
+  </div>
+</section>
+
+<section id="testimonials">
+  <h2 class="section-title">Testimonials</h2>
+  <div class="card-container">
+    <div class="card" data-aos="flip-left">"Veera is an outstanding Full Stack Developer!"</div>
+    <div class="card" data-aos="flip-left">"Always delivers projects with high quality and on time."</div>
+    <div class="card" data-aos="flip-left">"A passionate coder with amazing Java and React.js skills."</div>
+  </div>
+</section>
+
+<section id="blogs">
+  <h2 class="section-title">Blog</h2>
+  <div class="card-container">
+    <div class="card" data-aos="fade-up">
+      <h4>Why I Love Java</h4>
+      <p>Java is like a strict but caring parent. It nags you about types and errors but saves you from disasters at runtime. It's not just a language — it's a whole universe of magic spells: Spring Boot, Hibernate, Android apps, you name it! Java taught me patience, problem-solving, and how to drink 3 cups of coffee a day without blinking! 😂☕🚀</p>
+    </div>
+  </div>
+</section>
+
+<section id="achievements">
+  <h2 class="section-title">Achievements</h2>
+  <div class="card-container">
+    <div class="card" data-aos="fade-up">Java Full Stack Internship - Shiash Info Solutions (2024)</div>
+    <div class="card" data-aos="fade-up">Core Java Certification - Growth Ninja (2023)</div>
+    <div class="card" data-aos="fade-up">Frontend Development Certification - Great Learning (2023)</div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2 class="section-title">Contact</h2>
+  <p>Email: veerupenudhota6009@gmail.com</p>
+  <p>Phone: +91-7569534451</p>
+  <p>LinkedIn: <a href="https://linkedin.com/in/veeru-penudhota-435679268" target="_blank">Profile</a></p>
+  <p>GitHub: <a href="https://github.com/veerupenudhota" target="_blank">Profile</a></p>
+  <p>Instagram: <a href="https://www.instagram.com/tekhasi_matters_/" target="_blank">Follow</a></p>
+  <p>Twitter: <a href="https://twitter.com/VPenuthota" target="_blank">Follow</a></p>
+  <p>Facebook: <a href="https://www.facebook.com/veeru.victor.7" target="_blank">Connect</a></p>
+</section>
+
+<footer>
+  <p>Designed by Veera Brahmam Penudhota &copy; 2025</p>
+</footer>
+
+<script>
+  var typed = new Typed('#typing', {
+    strings: ['Java Full Stack Developer', 'Web Developer', 'Software Engineer'],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true
+  });
+  AOS.init();
+</script>
+
+</body>
+</html>
